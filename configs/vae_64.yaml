@@ -1,0 +1,22 @@
+model:
+  z_dim: 16
+  beta_kl: 1.0
+  future_pred_weight: 1.0
+
+dataset:
+  root: data/video
+  name: Gymnasium_CartPole
+  split: train
+  clip_len: 16
+  resolution: 64
+
+training:
+  epochs: 10
+  steps_per_epoch: 20
+  batch_size: 2
+  lr: 3e-4
+  num_workers: 0
+  seed: 42
+  out_dir: runs/vae_model
+  log_interval: 2
+  save_interval: 10
