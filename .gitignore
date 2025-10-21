@@ -1,3 +1,9 @@
+# Models and checkpoints
+models/
+fpt_models/
+outputs/
+checkpoints/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -24,7 +30,6 @@ MANIFEST
 # PyTorch
 *.pth
 *.pt
-*.ckpt
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -54,25 +59,13 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Project specific
-# Large dataset directories
-data/video/
-data/bair/
-evaluation_plots/
-runs/
-logs/
+# Data
+*.mp4
+*.npz
+*.npy
+converted_datasets/
+tfds_cache/
+
+# Logs
 *.log
-
-# Model checkpoints (if too large)
-*.pth
-*.pt
-*.ckpt
-
-# Temporary files
-*.tmp
-*.temp
-
-# Large files over 100MB
-*.zip
-*.tar.gz
-*.rar
+logs/
